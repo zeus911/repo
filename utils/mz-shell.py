@@ -140,7 +140,7 @@ class AnsibleShell(cmd.Cmd):
         if not os.path.exists(hostfile):
             output = open(hostfile,'w')
             output.close()
-        host_url = 'http://zcmdb.meizu.com/zcmdb/open/get_hosts_by_user'
+        host_url = 'http://***.***.***.***/get_hosts_by_user'
         req = urllib2.Request(host_url + '/' + self.user)
         response_stream = urllib2.urlopen(req)
         res = response_stream.read()
