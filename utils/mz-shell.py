@@ -31,8 +31,8 @@
 # create a [ansible-shell] section in your ansbile.cfg
 #  cwd=app-servers - you can set your default host pattern
 #  forks=100 - default forks
-import sys
 
+import sys
 try:
     import ansible 
 except Exception as e:
